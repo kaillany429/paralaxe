@@ -1,0 +1,195 @@
+@font-face {
+    font-family: titulo;
+    src: url(/fonte/Fancake.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: #75d5f1;
+    color: #000000;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header h1 {
+    font-size: 6rem;
+    background-image: url(https://64.media.tumblr.com/5e0a6af37d57a637dc7cedc1675cf678/c226a7512b1bc3f4-c4/s400x600/6f6487d19d2593e5c682a0630867efc68f0a20b0.gifv);
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: titulo;
+}
+
+.header p {
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    background-color: #6bc4f8dc;
+    padding: 20px;
+    width: 60%;
+    margin: 10px;
+    text-align: justify;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.box h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.box p::selection {
+    background-color: rgb(7, 105, 161);
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #6dc5f8;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+p {
+    font-size: large;
+}
+
+.parallax1 {
+    background-image: url(https://img.freepik.com/fotos-gratis/banner-medico-com-estetoscopio_23-2149611199.jpg?t=st=1729196216~exp=1729199816~hmac=03efe6c0b7970b46cdcdca0aa4fb95f6b6b77384cdb1f12bb68a9e4ff5c72025&w=740);
+}
+
+.parallax2 {
+    background-image: url(https://img.freepik.com/fotos-gratis/full-shot-pessoas-correndo-juntas_23-2149033473.jpg?t=st=1729274058~exp=1729277658~hmac=e58d21030d6a3f5d342b7a7020b0a64fee04243345c99e91fb68ded95c1709df&w=740);
+}
+
+.parallax3 {
+    background-image: url(https://img.freepik.com/fotos-premium/trabalhando-a-noite-toda_1391-2727.jpg?w=740);
+}
+
+.parallax4 {
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/12/09/18/salad-2496263_1280.jpg);
+}
+
+.parallax5 {
+    background-image: url(https://www.duosystem.com.br/wp-content/uploads/2023/11/tecnologia-em-saude-2.png);
+}
+
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    padding: 10px;
+    width: 30%;
+    margin: auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #41d2f7;
+    border-radius: 5px;
+}
+
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1a6ece;
+    color: antiquewhite;
+    border: none;
+    cursor: auto;
+    color: #62a6f3;
+    font-size: 15px;
+    transition: background-color 0.5s, transform 1s ease;
+    height: 40%;
+    width: 40%;
+    align-self: center;
+    border-radius: 10px;
+}
+
+
+form button:hover {
+    background-color: #3060e4;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .main-content {
+        flex-direction: column;
+        width: 30%;
+        margin: auto;
+    }
+
+    .parallax {
+        background-position: center;
+        height: 60vh;
+    }
+
+
+    nav ul li a {
+        padding: 20px;
+        display: contents;
+        margin: 0 15px;
+    }
+
+    .box {
+        width: 70%;
+    }
+
+    .header h1 {
+        width: 100%;
+        font-size: 58px;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: auto;
+        padding: 10px;
+        width: 58%;
+        margin: auto;
+    }
+
+
+}
